@@ -123,3 +123,29 @@ const array = [1, 2, 3, 2, 3];
 
 // calling the function
 getUnique(array);
+
+
+Q7
+#HTML
+<head> 
+<style type="text/css"> 
+body {margin: 30px;} 
+</style>  
+<meta charset=utf-8 /> 
+<title>Remove items from a dropdown list</title> 
+</head><body><form> 
+<select id="colorSelect"> 
+<option>Red</option> 
+<option>Green</option> 
+<option>White</option> 
+<option>Black</option> 
+</select> 
+<input type="button" onclick="removecolor()" value="Select and Remove"> 
+</form></body>
+
+#JS
+function removecolor()
+{
+var x=document.getElementById("colorSelect");
+x.remove(x.selectedIndex);
+}
